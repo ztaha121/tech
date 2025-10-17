@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="logo.jpg"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About DTH Tech</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+  body{scroll-behavior:smooth;background:#F0F4F8;color:#111;}
+
+  /* Navigation */
+  nav{position:fixed;width:100%;background:rgba(11,29,58,0.95);color:white;display:flex;justify-content:space-between;align-items:center;padding:15px 40px;z-index:1000;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+  nav a{color:white;text-decoration:none;margin-left:25px;font-weight:500;transition:0.3s;}
+  nav a:hover{color:#00BFA6;}
+  nav .logo{font-weight:700;font-size:1.3rem;}
+
+  /* Hero / Header */
+  header{display:flex;flex-direction:column;justify-content:center;align-items:center;height:60vh;text-align:center;position:relative;overflow:hidden;color:white;background:linear-gradient(135deg,#0D3B66,#00BFA6);}
+  header h1{font-size:3rem;margin-bottom:1rem;animation:fadeInDown 1s ease;}
+  header p{font-size:1.2rem;margin-bottom:2rem;max-width:700px;animation:fadeInUp 1s ease;}
+
+  @keyframes fadeInDown{from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+  @keyframes fadeInUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+  /* Sections */
+  section{padding:80px 20px;max-width:1000px;margin:0 auto;}
+  .section-title{color:#0D3B66;text-align:center;margin-bottom:50px;font-size:2rem;font-weight:600;}
+  .about-content{display:flex;flex-direction:row;gap:50px;align-items:center;flex-wrap:wrap;}
+  .about-text{flex:1; color:#334155; line-height:1.7; font-size:1.1rem;}
+  .about-image{flex:1; text-align:center;}
+  .about-image img{max-width:100%;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+
+  /* Footer */
+  footer{text-align:center;padding:30px 20px;background:#0B1D3A;color:white;margin-top:50px;}
+
+  /* Responsive */
+  @media(max-width:768px){nav{flex-direction:column;} nav a{margin:10px 0;} header h1{font-size:2.2rem;} header p{font-size:1rem;} .about-content{flex-direction:column;gap:30px;}}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="logo">DTH Tech</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Some of Our Projects</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header>
+  <h1>About DTH Tech</h1>
+  <p>Driving Innovation in Technology Solutions for the Oil & Gas Industry</p>
+</header>
+
+<!-- About Section -->
+<section id="about">
+  <h2 class="section-title">Who We Are</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>DTH Tech is a forward-thinking technology company dedicated to transforming the Oil & Gas sector with intelligent solutions. We specialize in software development, AI-driven analytics, cloud infrastructure, and IoT integration, providing our clients with modern tools to optimize operations, reduce costs, and make data-driven decisions.</p>
+      <p>Our team combines technical expertise with deep industry knowledge, ensuring every solution is tailored to meet specific business needs. At DTH Tech, we believe in innovation, efficiency, and seamless user experiences, helping our partners stay ahead in a rapidly evolving digital landscape.</p>
+      <p>Whether it's automating complex workflows, analyzing massive datasets, or deploying scalable cloud solutions, DTH Tech is committed to delivering excellence and driving real results for our clients.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?fit=crop&w=700&q=80" alt="DTH Tech Office / Team">
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2 class="section-title">Get in Touch</h2>
+  <p style="text-align:center;color:#334155;">Reach out to us for collaborations, projects, or inquiries.</p>
+  <p style="text-align:center;color:#00BFA6;font-weight:600;">contact@dth-technology.com</p>
+</section>
+
+<!-- Footer -->
+<footer>&copy; 2025 DTH Tech. All rights reserved.</footer>
+
+</body>
+</html>
